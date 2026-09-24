@@ -1,20 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
+    <head>
+        <title>Bio - My Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+              
+              
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        
+        
+        <!-- Bootstrap JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
     
-    <!-- Link to your external CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <body>
+        
+        
+        <nav class="navbar navbar-inverse myNav">
+    <div class="container">
 
-    <!-- Your visible web content goes here -->
-    <h1>Hello, World!</h1>
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-    <!-- Link to your external JavaScript file -->
+        <a class="navbar-brand" href="index.html">
+          <span class="glyphicon glyphicon-home"></span>
+          My Website
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="bio.html">Bio</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#" id="darkButton">
+              <span class="glyphicon glyphicon-adjust"></span>
+              Dark Mode
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+    <main class="container page-content">
+        
+        <div class="page-title">
+            <p class="small-heading">A LITTLE ABOUT ME</p>
+            <h1>My Bio</h1>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-sm-7">
+                <div class="simple-box bio-box">
+                    <h2>About Me</h2>
+                    
+                    <p>
+                        My name is <strong>Noah Kerr</strong> and I am a student
+                        at Granada High School.
+                    </p>
+                    
+                    <p>
+                        Some thing I enjoy are <strong>technology</strong>,
+                        <strong>music</strong>, and <strong>the outdoors</strong>.
+                        I put these things on my website because they are some of
+                        the things that I like.
+                    </p>
+                    
+                    <p>
+                        In AP CSP, I am learning about HTML, CSS, JavaScript,
+                        and Bootstrap. I am still learning how to code, but I
+                        getting more comfrotable with it.
+                    </p>
+                    
+                    <p>
+                        Something I would like to learn more about is
+                        <strong>other countries</strong>.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-sm-5">
+                <div class="simple-box bio-box">
+                    <h2>My Goal</h2>
+                    <p>
+                        My goal is to keep racticing and make better projects
+                        as the year goes on.
+                    </p>
+                    
+                    <hr>
+                    
+                    <p>
+                        <span class="glyphicon glyphicon-star"></span>
+                        Learn something new
+                    </p>
+                    
+                    <p>
+                        <span class="glyphicon glyphicon-pencil"></span>
+                        Keep Practicing
+                    </p>
+                    
+                    <p>
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                        Have fun making projects
+                    </p>
+                </div>
+            </div>
+        
+        </div>
+        
+        <h2 class="section-title text-center"> Things I Like</h2>
+        
+        <div class="row"></div>
+        
+        <!-- Image and link 1 -->
+      <div class="col-sm-4">
+        <div class="interest">
+          <a href="https://github.com/" target="_blank" rel="noopener">
+            <img
+              class="bio-image"
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=85"
+              alt="People working with computers"
+              width:"400px" height="400px">
+          </a>
+
+          <h3>Technology</h3>
+          <p>
+            I like learning about computers and coding.
+            <a href="https://github.com/" target="_blank" rel="noopener">
+              Visit GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+        
+        <!-- Image and link 2 -->
+        <div class="col-sm-4">
+            <div class="interest">
+                <a href="https://ww.spotify.com/" target="_blank" rel="noopener">
+                    <img
+                      class="bio-image"
+                      src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=85"
+                      alt="Person performing music"
+                      width:"400px" height="450px">
+                </a>
+                
+                <h3>Music</h3>
+                <p>
+                    Music is something I enjoy listening to.
+                    <a href="https://www.spotify.com/" target="_blank" rel="noopener">
+                        Visit Spotify
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- Image and link 3 -->
+        <div class="col-sm-4">
+            <div class="interest">
+                <a href="https:// ww.nps.gov" target="blank" rel="noopener">
+                    <img
+                      class="bio-image"
+                      src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85"
+                      alt="Mountain landscape"
+                      width:"400px" height="600px">
+                </a>
+                      
+                      <h3>The Outdoors</h3>
+                      <p>
+                          I like spending time otuside and exploring.
+                          <a href="https://www.nps.gov/" target="_blank" rel="noopener">
+                              Visit NPS
+                          </a>
+                      </p>
+                </a>
+            </div>
+        </div>
+
+</main>
+
+<!--Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>
+            Created by <strong>Noah Kerr</strong> =
+            <span id="year"></span>
+        </p>
+        
+        <p>
+            <a href="https://granadahigh.livermoreschools.org/"
+            target="_blank"
+            rel="noopener">
+                <span class="glyphicon glyphicon-education"></span>
+                Granada High School
+            </a>
+            
+            <span class="footer-line"> | </span>
+            
+            <a href="mailto:noah.ker@lvjusd.org">
+                <span class="glyphicon glyphicon-envelope"></span>
+                Email Me
+            </a>
+        </p>
+    </div>
+</footer>
+    
     <script src="script.js"></script>
-</body>
-</html>
 
+    </body>
+</html>
